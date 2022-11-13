@@ -27,7 +27,7 @@
               <a class="action edit" href="{{ url_for('index.updateProject', id=project['id']) }}">Edit</a>
               {% endif %}
           </div>
-          {% if project['url'] != None %}
+          {% if project['url'] is not None %}
                 <div class="url">
                   <iframe width="640" height="360" src="{{ project['url'] }}" frameborder="0" allowfullscreen></iframe>
                 </div>
