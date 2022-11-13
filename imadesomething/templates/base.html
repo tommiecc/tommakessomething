@@ -109,9 +109,12 @@
   {% block content %}{% endblock %}
 </section>
 <hr/>
-<small>Created with love by Tom | Built with Flask</small>
+<a href="https://imadesomething.web.app">Created with love by Tom | Built with Flask </a>
+<br/>
 <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Dave Gandy - Flaticon</a>
+<br/>
 <a href="https://www.flaticon.com/free-icons/stack-overflow" title="stack overflow icons">Stack overflow icons created by Pixel perfect - Flaticon</a>
+<br/>
 <a href="https://tomethstan.web.app"><span class="material-symbols-outlined">
   military_tech
   </span></a>
@@ -121,13 +124,13 @@
   function blog_update() {
     var input = document.getElementById("post_id_update").value;
     if (input != undefined && input != null) {
-      window.location = `http://127.0.0.1:5000/blog/${input}/update`;
+      window.location = `http://tommakessomething.pythonanywhere.com/blog/${input}/update`;
     }
   };
   function project_update() {
     var input3 = document.getElementById("project_id_update").value;
     if (input3 != undefined && input3 != null) {
-      window.location = `http://127.0.0.1:5000/project/${input3}/update`;
+      window.location = `http://tommakessomething.pythonanywhere.com/projects/${input3}/update`;
     }
   };
 </script>
