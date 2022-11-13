@@ -8,12 +8,17 @@
   <form method="post">
     <label for="title">Title</label>
     <br/>
-    <input name="title" id="title"
+    <input name="title" id="title" size="10"
       value="{{ request.form['title'] or post['title'] }}" required>
+    <br/>
+    <label for="url">Youtube URL</label>
+    <br/>
+    <input name="url" id="url" size="10"
+      value="{{ request.form['url'] or post['url'] }}" required>
     <br/>
     <label for="body">Body</label>
     <br/>
-    <textarea name="body" id="body">{{ request.form['body'] or post['body'] }}</textarea>
+    <textarea name="body" id="body" rows="10" cols="50">{{ request.form['body'] or post['body'] }}</textarea>
     <br/>
     <input type="submit" value="Save">
     <br/>
