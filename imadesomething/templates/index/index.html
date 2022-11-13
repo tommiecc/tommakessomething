@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Home{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <div id="about">
+    <h3>My Name is Tom</h3>
+    <h4>And I like to make stuff</h4>
+    <p>
+        On this website you will find everything I like to do from coding and electronics, projects and apps that you might be able to use.
+        You'll find topics like history, religion, and geography. Really anything! 
+    </p>
+    <h5>So look around and enjoy</h5>
+  </div>
+  <h3>Projects</h3>
+  <div id="projects">
+    {% for project in projects %}
+        <div class="card">
+          <div class="card-header">
+              <div>
+                <h1 class="title">{{ project['title'] }}</h1>
+                <div class="about">by {{ project['username'] }} on {{ project['created'].strftime('%Y-%m-%d') }}</div>
+              </div>
+              {% if g.user['id'] == project['author_id'] %}
+              <a class="action edit" href="{{ url_for('index.updateProject', id=project['id']) }}">Edit</a>
+              {% endif %}
+          </div>
+          {% if project['url'] != None %}
+                <div class="url">
+                  <iframe width="640" height="360" src="{{ project['url'] }}" frameborder="0" allowfullscreen></iframe>
+                </div>
+          {% endif %}
+          <div class="card-body">
+            <p class="body">{{ project['body'] }}</p>
+          </div>
+        </div>
+     {% if not loop.last %}
+         <hr>
+     {% endif %}
+    {% endfor %}
+  </div>
+{% endblock %}

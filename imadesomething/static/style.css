@@ -1,0 +1,200 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Coming+Soon);
+
+html {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    text-align: center;
+    -ms-flex-line-pack: centre;
+        align-content: centre;
+    color: white;
+}
+
+html ul.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    text-align: center;
+    -ms-flex-line-pack: centre;
+        align-content: centre; 
+}
+
+html h1,
+html h3,
+html h5 {
+    color: darkcyan !important;
+    font-family: 'Coming Soon' !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+
+html h1.title,
+html h3.title,
+html h5.title,
+html div.title {
+    color: darkcyan !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    text-align: center;
+    -ms-flex-line-pack: centre;
+        align-content: centre;
+}
+
+html h2,
+html h4,
+html h6 {
+    color: black !important;
+    font-family: 'Coming Soon' !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+
+html p,
+html li {
+    color: #666666 !important;
+    font-family: "Open Sans", sans-serif !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+
+html small {
+    color: darkgrey !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+
+html small.title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    text-align: center;
+    -ms-flex-line-pack: centre;
+        align-content: centre;
+}
+
+html a {
+    color: black !important;
+    display: inline-block !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    text-decoration: none !important;
+}
+
+html a#stackicon, a#giticon {
+    color: lightgrey !important;
+}
+
+html a:hover {
+    -webkit-transform: scale(1.1) !important;
+            transform: scale(1.1) !important;
+}
+
+html a.title {
+    color: darkcyan !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    text-align: center;
+    -ms-flex-line-pack: centre;
+        align-content: centre;
+}
+
+html .icon {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    margin: 3em;
+    vertical-align: middle !important;
+}
+
+html button {
+    background-color: darkcyan !important;
+    color: white !important;
+    border-color: darkcyan !important;
+    -webkit-box-shadow: cyan;
+            box-shadow: cyan;
+}
+
+#articles {
+    color: #666666;
+    font-family: "Open Sans", sans-serif;
+}
+
+.card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}

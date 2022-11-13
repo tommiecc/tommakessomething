@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Posts{% endblock %}</h1>
+  {% if g.user %}
+    <a class="action" href="{{ url_for('index.create') }}">New</a>
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+  {% for post in posts %}
+    <div class="card">
+      <div class="card-header">
+          <div>
+            <h1 class="title">{{ post['title'] }}</h1>
+            <div class="about">by {{ post['username'] }} on {{ post['created'].strftime('%d-%m-%Y') }}</div>
+          </div>
+          {% if g.user['id'] == post['author_id'] %}
+          <a class="action edit" href="{{ url_for('index.update', id=post['id']) }}">Edit</a>
+          {% endif %}
+      </div>
+      {% if post['url'] != None %}
+            <div class="url">
+              <iframe width="640" height="360" src="{{ post['url'] }}" frameborder="0" allowfullscreen></iframe>
+            </div>
+      {% endif %}
+      <div class="card-body">
+        <p class="body">{{ post['body'] }}</p>
+      </div>
+    </div>
+    {% if not loop.last %}
+      <hr>
+    {% endif %}
+  {% endfor %}
+{% endblock %}

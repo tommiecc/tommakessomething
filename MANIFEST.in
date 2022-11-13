@@ -1,0 +1,4 @@
+include imadesomething/schema.sql
+graft imadesomething/static
+graft imadesomething/templates
+global-exclude *.pyc
