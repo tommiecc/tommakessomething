@@ -1,6 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Coming+Soon);
 
+@include media-breakpoint-up(sm) {
+    .card  {
+        width: 36em !important;
+    }
+}
+@include media-breakpoint-up(md) {
+    .card {
+        width: 48em !important;
+    }
+}
+@include media-breakpoint-up(lg) {
+    .card {
+        width: 60em !important;
+    }
+}
+@include media-breakpoint-up(xl) {
+    .card {
+        width: 75em !important;
+    }
+}
+
 html {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -16,10 +37,12 @@ html {
         -ms-flex-align: center;
             align-items: center;
     margin: auto;
+    margin-left: 10em;
     text-align: center;
     -ms-flex-line-pack: centre;
         align-content: centre;
     color: white;
+    width: 75%;
 }
 
 html ul.nav {
@@ -39,7 +62,7 @@ html ul.nav {
     margin: auto;
     text-align: center;
     -ms-flex-line-pack: centre;
-        align-content: centre; 
+        align-content: centre;
 }
 
 html h1,
@@ -198,3 +221,7 @@ html button {
     display: -ms-flexbox;
     display: flex;
 }
+
+
+
+
