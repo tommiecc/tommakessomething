@@ -9,16 +9,16 @@
     <label for="title">Title</label>
     <br/>
     <input name="title" id="title"
-      value="{{ request.form['title'] or project['title'] }}" required>
+      value="{{ request.form['title'] or project['title'] }}" size="50" required>
     <br/>
     <label for="url">You Tube URL</label>
     <br/>
-    <input name="url" id="url"
+    <input name="url" id="url" size="50"
         value="{{ request.form['url'] or project['url'] }}">
     <br/>
     <label for="body">Body</label>
     <br/>
-    <textarea name="body" id="body">{{ request.form['body'] or project['body'] }}</textarea>
+    <textarea name="body" id="body" row="10" cols="50">{{ request.form['body'] or project['body'] }}</textarea>
     <br/>
     <input type="submit" value="Save">
     <br/>
